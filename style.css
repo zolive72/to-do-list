@@ -1,0 +1,42 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: hsl(0, 6%, 86%)
+}
+
+.container {
+  width: 440px;
+  padding: 2px 15px 5px 5px;
+  margin-top: 30px;
+  background-color: hsl(0, 0%, 96%)
+}
+
+.todos-container {
+  padding: 0px 5px 0px 30px;
+  max-height: 295px ;
+  overflow-y:scroll;
+}
+
+input[type=text],
+input[type=text]:focus {
+  color: hsl(0, 0%, 0%);
+  font-weight: 600;
+  max-width: 368px;
+  margin-left: 30px;
+}
+
+.todos-container li {
+  background-color: hsla(210, 50%, 98%, 0.747);
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: hsla(210, 50%, 88%, 0.747) !important;
+}
